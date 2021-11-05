@@ -103,7 +103,7 @@ char urun_kaydet(char secim){
 }
 
 void urun_goster(){
-	printf("***************Kayýtlý Ürünler***************\n");
+	printf("***************KayÄ±tlÄ± ÃœrÃ¼nler***************\n");
 	printf("%s  %dTL  %s %s\n",T.isim,T.maliyet,T.tur,T.alinmaTarihi);
 	printf("%s  %d  %s  %s  %s\n",E.isim,E.maliyet,E.tur,E.paketlenmeTarihi,E.skt);
 
@@ -115,12 +115,12 @@ void urun_goster(){
 int main(){
 	char kategori[1];
 	while (1){
-		printf("Ürün Kategorisini Seçiniz (E,T,S,K,G) -> ");
+		printf("ÃœrÃ¼n Kategorisini SeÃ§iniz (E,T,S,K,G) -> ");
 		scanf("%c",&kategori);
 		switch(kategori){
 			case 'E':
 				urun_kaydet('E');
-				printf("Cýkmak icin c'ye basin.Devam etmek istiyorsaniz herhangi bir tusa basin.' ");
+				printf("CÄ±kmak icin c'ye basin.Devam etmek istiyorsaniz herhangi bir tusa basin.' ");
 			scanf("%s",kategori);
 			if(kategori[0] == 'c'){
 				break;
@@ -132,7 +132,7 @@ int main(){
 		
 		   	case 'T':
 		   		urun_kaydet('T');
-				printf("Cýkmak icin c'ye basin.Devam etmek istiyorsaniz herhangi bir tusa basin.' ");
+				printf("CÄ±kmak icin c'ye basin.Devam etmek istiyorsaniz herhangi bir tusa basin.' ");
 			scanf("%s",kategori);
 			if(kategori[0] == 'c'){
 				break;
@@ -144,7 +144,7 @@ int main(){
 			
 			case 'S':
 				urun_kaydet('S');
-				printf("Cýkmak icin c'ye basin.Devam etmek istiyorsaniz herhangi bir tusa basin.' ");
+				printf("CÄ±kmak icin c'ye basin.Devam etmek istiyorsaniz herhangi bir tusa basin.' ");
 			scanf("%s",kategori);
 			if(kategori[0] == 'c'){
 				break;
@@ -156,7 +156,7 @@ int main(){
 			
 			case 'K':
 				urun_kaydet('K');
-				printf("Cýkmak icin c'ye basin.Devam etmek istiyorsaniz herhangi bir tusa basin.' ");
+				printf("CÄ±kmak icin c'ye basin.Devam etmek istiyorsaniz herhangi bir tusa basin.' ");
 			scanf("%s",kategori);
 			if(kategori[0] == 'c'){
 				break;
@@ -168,7 +168,7 @@ int main(){
 			
 			case 'G':
 				urun_kaydet('G');
-				printf("Cýkmak icin c'ye basin.Devam etmek istiyorsaniz herhangi bir tusa basin.' ");
+				printf("CÄ±kmak icin c'ye basin.Devam etmek istiyorsaniz herhangi bir tusa basin.' ");
 			scanf("%s",kategori);
 			if(kategori[0] == 'c'){
 				break;
